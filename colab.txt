@@ -1,0 +1,29 @@
+# Pip install packages
+%pip install ultralytics
+%pip install roboflow
+
+# Import packages
+from roboflow import Roboflow
+from ultralytics import YOLO
+
+# Get your API key from app.roboflow.com and use it here
+rf = Roboflow(api_key="UEVy3RH1ekFLVJYMztXn")
+
+# Replace the project and version with yours
+project = rf.workspace("hamka-corrosion").project("corrosion-segmentation-rlb4u")
+dataset = project.version(6).download("yolov8")  # Change version number as needed
+
+# Load the YOLO model
+model = YOLO("yolov8n-seg.pt")  # Use a segmentation model
+
+# Train the model
+results = model.train(
+    data=f"{dataset.location}/data.yaml",
+    epochs=100,
+    imgsz=512,
+    batch=16,
+    name="corrosion-seg-run1"
+)
+
+# Optional: Evaluate on test set
+print(results)

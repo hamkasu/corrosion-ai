@@ -1,0 +1,6 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+pydantic==2.8.2
+sqlalchemy==2.0.30
+Pillow==10.3.0
+torch==2.3.0  # or tensorflow

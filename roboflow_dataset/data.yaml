@@ -1,0 +1,9 @@
+train: C:/corrosion_ai/roboflow_dataset/train
+val: C:/corrosion_ai/roboflow_dataset/valid
+test: C:/corrosion_ai/roboflow_dataset/test
+
+nc: 1
+names: ['corrosion']
+
+names: 
+  0: segmentation
