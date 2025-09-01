@@ -4,5 +4,4 @@ __pycache__
 *.tar
 uploads/
 annotated/
-models/
 .env

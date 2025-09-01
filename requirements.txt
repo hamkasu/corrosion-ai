@@ -6,4 +6,5 @@ Pillow
 ultralytics
 opencv-python
 requests
+gdown
 python-dotenv
