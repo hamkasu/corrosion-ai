@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.company-info h1 {
+  color: #2E8B57;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.company-info p {
+  color: #555;
+  font-size: 18px;
+}
+
+main {
+  padding: 30px;
+}
+
+.upload-section, .result-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  background-color: #2E8B57;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #236B45;
+}
+
+.result-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-container h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.image-container img {
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.info-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f8ff;
+  border-left: 4px solid #2E8B57;
+  border-radius: 6px;
+}
+
+.comment-box {
+  margin-top: 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-size: 14px;
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+}

@@ -2,15 +2,16 @@
 
 from pydantic import BaseModel
 from datetime import datetime
-from typing import Optional, List
+from typing import Optional, Dict
 
 class InspectionCreate(BaseModel):
     image_path: str
     annotated_path: Optional[str] = None
     prediction: str
     confidence: float
-    masks: Optional[List[List[List[float]]]] = None  # List of 2D masks
-    image_meta: Optional[dict] = None
+    image_meta: Optional[Dict] = None
+    project_id: str = "default"
+    project_description: Optional[str] = None
 
 class InspectionResponse(InspectionCreate):
     id: int
