@@ -7,4 +7,5 @@ ultralytics
 opencv-python
 requests
 gdown
+pandas
 python-dotenv
